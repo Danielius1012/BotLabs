@@ -1,6 +1,6 @@
 # BotLabs
 
-![Microsoft Loves Bots](/images/MLB_Logo.png)
+![Microsoft Loves Bots](/_images/MLB_Logo.png)
 
 
 This repository is build as a learning environment to learn the basics of developing bots with the [Microsoft Bot Framework][1].
