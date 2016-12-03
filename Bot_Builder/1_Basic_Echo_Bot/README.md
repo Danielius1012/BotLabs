@@ -29,7 +29,7 @@ It is quite limited in its potential, because it just answers with the message, 
     using Microsoft.Bot.Connector;
     using Newtonsoft.Json;
 
-    namespace $safeprojectname$
+    namespace EchoBotProject
     {
         [BotAuthentication]
         public class MessagesController : ApiController
@@ -49,7 +49,7 @@ It is quite limited in its potential, because it just answers with the message, 
                     // return our reply to the user
                     Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
 
-await connector.Conversations.ReplyToActivityAsync(reply);
+                    await connector.Conversations.ReplyToActivityAsync(reply);
                 }
                 else
                 {
