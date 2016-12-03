@@ -4,7 +4,7 @@ In this lab, we will get to know the basics of building your first bot: A simple
 
 It is quite limited in its potential, because it just answers with the message, that is send to it (with some additional information).
 
-## Instructions
+## Instructions - Setting up the bot
 
 1. At first, I you haven't done this yet, please download the [Visual Studio IDE](https://www.visualstudio.com/vs/) in your preferred edition (the link refers to VS Community, which is completely free).
 
@@ -14,7 +14,7 @@ It is quite limited in its potential, because it just answers with the message, 
 
 1. [Optional] Set up source control for your project. The [GitHub extension for Visual Studio](https://visualstudio.github.com/) might come in handy here :-)
 
-1. Open the solution and take a look at the file: controllers/MessagesController.cs 
+1. Open the solution and take a look at the file: controllers/MessagesController.cs. 
 ```C# 
 using System;
 using System.Linq;
@@ -86,3 +86,9 @@ namespace $safeprojectname$
     }
 }
 ```
+
+1. The bot is now set up to work in the way expected: It will calculate the length of the message, that is sent to it and returns: "You sent {activity.Text} which was {length} characters"
+
+## Instructions - Publishing
+
+1. To publish the bot to use it in the channels we want, we need to create an Azure App Service. Fortunately, this is build right into Visual Studio. Just right-click on the project and choose "Publish" ![Publish Option](./_images/2_Publish_Option.png)
