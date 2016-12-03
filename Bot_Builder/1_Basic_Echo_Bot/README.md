@@ -15,7 +15,7 @@ It is quite limited in its potential, because it just answers with the message, 
 1. [Optional] Set up source control for your project. The [GitHub extension for Visual Studio](https://visualstudio.github.com/) might come in handy here :-)
 
 1. Open the solution and take a look at the file: controllers/MessagesController.cs 
-'''C# 
+```C# 
 using System;
 using System.Linq;
 using System.Net;
@@ -85,5 +85,4 @@ namespace $safeprojectname$
         }
     }
 }
-
-'''
+```
