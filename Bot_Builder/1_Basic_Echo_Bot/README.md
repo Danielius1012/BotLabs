@@ -90,7 +90,7 @@ It is quite limited in its potential, because it just answers with the message, 
         }
     }
     ```
-1. The bot is now set up to work in the way expected: It will calculate the length of the message, that is sent to it and returns: "You sent {activity.Text} which was {length} characters"
+1. The bot is now set up to work in the way expected: It will calculate the length of the message, that is sent to it and returns: "You sent {activity.Text} which was {length} characters". You can test this behaviour with the [Bot Framework Emulator](https://emulator.botframework.com/).
 
 ## Instructions - Publishing
 
