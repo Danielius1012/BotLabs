@@ -100,9 +100,9 @@ It is quite limited in its potential, because it just answers with the message, 
     
 2. Select the Azure App Service and click "New" on the right side of the window. This will create a new Azure Service, which you can then modify and create, by clicking "Create" on the bottom of the page.
 
-    ![New Service](./_images/3_NewService.png)
-
     ![Pick Publish Method](./_images/3_PickPublishMethod.png)
+    
+    ![New Service](./_images/3_NewService.png)
 
     ![Create Azure Service](./_images/4_CreateAzureService.png)
 
