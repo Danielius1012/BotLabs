@@ -1,10 +1,10 @@
-# Basic Echo Bot - Bot Builder
+# Basic Echo Bot - Bot Builder #
 
 In this lab, we will get to know the basics of building your first bot: A simple Echo Bot. 
 
 It is quite limited in its potential, because it just answers with the message, that is send to it (with some additional information).
 
-## Instructions - Setting up the bot
+## Instructions - Setting up the bot ##
 
 1. At first, I you haven't done this yet, please download the [Visual Studio IDE](https://www.visualstudio.com/vs/) in your preferred edition (the link refers to VS Community, which is completely free).
 
@@ -90,15 +90,15 @@ It is quite limited in its potential, because it just answers with the message, 
         }
     }
     ```
-1. The bot is now set up to work in the way expected: It will calculate the length of the message, that is sent to it and returns: "You sent {activity.Text} which was {length} characters". You can test this behaviour with the [Bot Framework Emulator](https://emulator.botframework.com/).
+1. The bot is now set up to work in the way expected: It will calculate the length of the message, that is sent to it and returns: "You sent {activity.Text} which was {length} characters". You can test this behaviour with the [Bot Framework Emulator](https://emulator.botframework.com/). If you encounter any issues with the emulator, take a look at the [Emulator Wiki Page](https://github.com/microsoft/botframework-emulator/wiki/Getting-Started)
 
-## Instructions - Publishing
+## Instructions - Publishing ##
 
 1. To publish the bot to use it in the channels we want, we need to create an Azure App Service. Fortunately, this is build right into Visual Studio. Just right-click on the project and choose "Publish". For this we need an Microsoft Azure Account. You can get a free account wtih 25$ of monthly credit from [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
     ![Publish Option](./_images/2_Publish_Option.png)
     
-2. Select the Azure App Service and click "New" on the right side of the window. This will create a new Azure Service, which you can then modify and create, by clicking "Create" on the bottom of the page.
+1. Select the Azure App Service and click "New" on the right side of the window. This will create a new Azure Service, which you can then modify and create, by clicking "Create" on the bottom of the page.
 
     ![Pick Publish Method](./_images/3_PickPublishMethod.png)
     
@@ -106,4 +106,11 @@ It is quite limited in its potential, because it just answers with the message, 
 
     ![Create Azure Service](./_images/4_CreateAzureService.png)
 
+1. After Publishing your bot by clicking Publish, your are now able to [Register your bot](https://dev.botframework.com/bots/new) on the Bot Framework Website. The next steps will lead you through this.
+
+## Instructions - Connecting your bot to channels ##
+
+1. By clicking the [Register your bot](https://dev.botframework.com/bots/new) link, you will be directed to a website, where you can define the values of your bot. These are needed to connect it to the channels in the future. For Messaging endpoint use a URL that looks like this: https://YOUR_BOT_NAME.azurewebsites.net/api/messages
+
+    ![Register Bot](./_images/5_RegisterBot.png)
 
