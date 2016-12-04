@@ -120,7 +120,7 @@ It is quite limited in its potential, because it just answers with the message, 
 
 1. Before you can use your bot, update the web.config in Visual Studio with the App ID and Password and publish it again.
 
-    ![Web Config](./images/6_WebConfig.png)
+    ![Web Config](./_images/6_WebConfig.png)
 
 1. After you have done this, you can see your bots web page, where you can test it, add new channels and publish it for the world to use. 
     
