@@ -94,8 +94,16 @@ It is quite limited in its potential, because it just answers with the message, 
 
 ## Instructions - Publishing
 
-1. To publish the bot to use it in the channels we want, we need to create an Azure App Service. Fortunately, this is build right into Visual Studio. Just right-click on the project and choose "Publish" 
+1. To publish the bot to use it in the channels we want, we need to create an Azure App Service. Fortunately, this is build right into Visual Studio. Just right-click on the project and choose "Publish". For this we need an Microsoft Azure Account. You can get a free account wtih 25$ of monthly credit from [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
     ![Publish Option](./_images/2_Publish_Option.png)
     
-2. ...
+2. Select the Azure App Service and click "New" on the right side of the window. This will create a new Azure Service, which you can then modify and create, by clicking "Create" on the bottom of the page.
+
+    ![New Service](./_images/3_NewService.png)
+
+    ![Pick Publish Method](./_images/3_PickPublishMethod.png)
+
+    ![Create Azure Service](./_images/4_CreateAzureService.png)
+
+
