@@ -4,7 +4,7 @@ In this lab, we will create a bot, that is filled with predefined options. Our g
 
 We will not cover how to publish or register your bot. To learn more about publishing and registration, take a look at the [Basic Echo Bot](https://github.com/Danielius1012/BotLabs/tree/master/Bot_Builder/1_Basic_Echo_Bot)
 
-## Setting up the bot ##
+## Setting up the Form Flow bot ##
 
 1. [Optional] If you don't know how to create a bot project in Visual Studio, take a look at the [Basic Echo Bot](https://github.com/Danielius1012/BotLabs/tree/master/Bot_Builder/1_Basic_Echo_Bot) for instructions how to do this and come back after finishing the "Setting up the bot" chapter.
 
