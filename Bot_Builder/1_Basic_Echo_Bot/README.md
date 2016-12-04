@@ -114,3 +114,20 @@ It is quite limited in its potential, because it just answers with the message, 
 
     ![Register Bot](./_images/5_RegisterBot.png)
 
+1. To finish the process, click on "Create Microsoft App ID and password" and store the values for App ID and Password, as we will need them in the next steps.
+
+1. Now save your bot, click on "Register" on the bottom of the page.
+
+1. Before you can use your bot, update the web.config in Visual Studio with the App ID and Password and publish it again.
+
+    ![Web Config](./images/6_WebConfig.png)
+
+1. After you have done this, you can see your bots web page, where you can test it, add new channels and publish it for the world to use. 
+    
+    ![Bot Overview](./_images/7_BotOverview.png)
+
+## Further Steps ##
+
+1. To learn about other bots, try out the tutorials on [Form Flow Bot](https://github.com/Danielius1012/BotLabs/tree/master/Bot_Builder/2_Form_Flow_Bot) or [LUIS Bot](https://github.com/Danielius1012/BotLabs/tree/master/Bot_Builder/3_LUIS_Bot)
+
+1. If you want to get to know a even more agile and Cloud optimized way to develop a bot, check out the labs on the [Azure Bot Service]()
