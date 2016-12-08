@@ -18,7 +18,7 @@ It is quite limited in its potential, because it just answers with the message, 
 
 1. Open the solution and take a look at the file: controllers/MessagesController.cs. 
 
-    ```C# 
+    ```csharp
     using System;
     using System.Linq;
     using System.Net;
