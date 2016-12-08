@@ -326,8 +326,8 @@ We will not cover how to publish or register your bot. To learn more about publi
 
     We can take away a few things from this data: 
 
-        - Temperature is in Kelvin (or it is really hot in London), so we have to convert it later
-        - We can get information like pressure, humidity, wind speed and degree and even an icon
+    - Temperature is in Kelvin (or it is really hot in London), so we have to convert it later
+    - We can get information like pressure, humidity, wind speed and degree and even an icon
 
 1. If we now copy the whole JSON and go to our WeatherData.cs file, we can generate an object out of it, that is needed for deserialization. To do this, we let Visual Studio help us. Just type 'json' into the **Quick Launch** bar (**Ctrl+Q**) and choose '**Paste JSON as classes**'. The structure is then put into the class. The only thing we have to change is to replace **Rootobject** with **WeatherData**. Now this class will look as follows:
 
