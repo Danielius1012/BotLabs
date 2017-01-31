@@ -1,4 +1,4 @@
-# Authentification Bot - Bot Builder
+# Authentication Bot - Bot Builder
 
 In the course of this lab, we will build a bot that can post anything on Facebook, but only after it gets the required permissions from the user via login. This example uses some code from the [Microsoft Bot Builder repository](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/SimpleFacebookAuthBot).
 
