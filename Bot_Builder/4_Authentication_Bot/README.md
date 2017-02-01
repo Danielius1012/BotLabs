@@ -17,11 +17,31 @@ We will not cover how to publish or register your bot. To learn more about publi
 
 ## Writing the Facebook Dialog ##
 
-...
+To interact with the user, a Facebook Dialog is needed. Therfore, we create 
 
 ## Wrapping the Facebook functionality with FacebookHelper ##
 
 ...
+
+Now the bot has the permission to post any message you give to it on your behalf, but if you don't want the permissions to stay, you can delete them completely with the DeletePermissions method. The [Facebook guide on deleting permissions](https://developers.facebook.com/docs/facebook-login/permissions/requesting-and-revoking) is not quite clear on what is exactly needed to delete the permissions. These are 2 things: 
+- a DELETE call to  https://graph.facebook.com/{user-id}/permissions
+- a URL parameter with the token current app token "access_token"
+
+The final delete method looks as follows:
+
+```csharp
+public static async Task DeletePermissions(string accessToken, string id)
+{
+    // Delete Permissions: https://developers.facebook.com/docs/facebook-login/permissions/requesting-and-revoking
+    var uri = GetUri($"https://graph.facebook.com/{id}/permissions",
+        Tuple.Create("access_token", accessToken));
+
+    using (HttpClient client = new HttpClient())
+    {
+        var a = await client.DeleteAsync(uri.ToString());
+    }
+}
+```
 
 ## Creating the OAuth Controller ##
 
@@ -29,7 +49,7 @@ We will not cover how to publish or register your bot. To learn more about publi
 
 ## Testing the service ##
 
-...
+We created 4 tasks the bot can perform: login, logout, post a message and delete permissions.
 
 ## Further Steps ##
 
